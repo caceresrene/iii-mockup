@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Control Parental</title>
+</head>
+<body class="max-w-lg mx-auto my-4">
+    <header class="flex flex-col items-center my-3">
+        <h1 class="text-blue-700 text-2xl font-extrabold uppercase font-mono">
+            Control Parental
+        </h1>
+        <p class="text-xs text-gray-400">Control parental le permite a los padres proteger la integridad de sus hijos en el internet</p>
+    </header>
+    <main class="flex flex-col gap-3">
+        <button class="bg-blue-500 p-2 rounded text-white shadow hover:ring-4 hover:ring-blue-300 hover:-translate-y-1 transform transition-all flex items-center gap-2 justify-center">
+        
+            <svg xmlns="http://www.w3.org/2000/svg" class='w-6 h-6' fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+            Bloquear contenido para adultos
+        </button>
+        <button class="bg-blue-500 p-2 rounded text-white shadow-md hover:ring-4 hover:ring-blue-300 hover:-translate-y-1 transform transition-all flex items-center gap-2 justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class='h-6 w-6' fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+            </svg>
+            Permitir este sitio
+        </button>
+        <form action="" class="bg-blue-100 p-2 rounded flex flex-col">
+            <div class="flex flex-col px-2 gap-1">
+                <label for="links">Bloquear paginas en especifico</label>
+                <input class="border-slate-500 border-2 rounded px-1 text-gray-600" type="text" value="Ingrese links..." name="links">
+            </div> 
+            <input class="bg-blue-400 text-white px-2 py-1 rounded m-2 hover:ring-4 hover:ring-blue-600 hover:-translate-y-0.5 transform transition-all hover:cursor-pointer" type="submit" value="Confirmar">
+        </form>
+    </main>
+    <div class="bg-blue-100 rounded my-4 flex gap-4 px-4 py-2 items-center">
+        <div>
+            <h2>Limitar tiempo de uso por: </h2>
+        </div>
+        <button class="p-2 bg-blue-400 rounded-full h-16 w-16 flex flex-col items-center hover:ring hover:ring-blue-600 transform transition-all text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-none" fill="currentColor" class="bi bi-hourglass-bottom" viewBox="0 0 16 16">
+                <path d="M2 1.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1-.5-.5zm2.5.5v1a3.5 3.5 0 0 0 1.989 3.158c.533.256 1.011.791 1.011 1.491v.702s.18.149.5.149.5-.15.5-.15v-.7c0-.701.478-1.236 1.011-1.492A3.5 3.5 0 0 0 11.5 3V2h-7z"/>
+            </svg>
+            1 h
+        </button>
+        <button class="p-2 bg-blue-400 rounded-full h-16 w-16 flex flex-col items-center hover:ring hover:ring-blue-600 transform transition-all text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-none" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+                <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+            </svg>
+            3 h
+        </button>
+        <button class="p-2 bg-blue-400 rounded-full h-16 w-16 flex flex-col items-center hover:ring hover:ring-blue-600 transform transition-all text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-none" fill="currentColor" class="bi bi-hourglass-top" viewBox="0 0 16 16">
+                <path d="M2 14.5a.5.5 0 0 0 .5.5h11a.5.5 0 1 0 0-1h-1v-1a4.5 4.5 0 0 0-2.557-4.06c-.29-.139-.443-.377-.443-.59v-.7c0-.213.154-.451.443-.59A4.5 4.5 0 0 0 12.5 3V2h1a.5.5 0 0 0 0-1h-11a.5.5 0 0 0 0 1h1v1a4.5 4.5 0 0 0 2.557 4.06c.29.139.443.377.443.59v.7c0 .213-.154.451-.443.59A4.5 4.5 0 0 0 3.5 13v1h-1a.5.5 0 0 0-.5.5zm2.5-.5v-1a3.5 3.5 0 0 1 1.989-3.158c.533-.256 1.011-.79 1.011-1.491v-.702s.18.101.5.101.5-.1.5-.1v.7c0 .701.478 1.236 1.011 1.492A3.5 3.5 0 0 1 11.5 13v1h-7z"/>
+            </svg>
+            8 h
+        </button>
+    </div>
+    <footer class="flex m-2 gap-6 justify-end">
+        <div>
+            <h2 class="font-semibold">Compañia</h2>
+            <ul class="flex flex-col text-sm">
+                <li class="hover:text-blue-500 hover:cursor-pointer">Trabajos</li>
+                <li class="hover:text-blue-500 hover:cursor-pointer">Soporte</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="font-semibold">Ayuda</h2>
+            <ul class="flex flex-col text-sm">
+                <li class="hover:text-blue-500 hover:cursor-pointer">FAQ</li>
+                <li class="hover:text-blue-500 hover:cursor-pointer">Ticket</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
